@@ -1,3 +1,1 @@
-# ProgrammingDemo
-
-Developed with Unreal Engine 4
+ProgrammingDemo

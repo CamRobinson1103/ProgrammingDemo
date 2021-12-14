@@ -18,10 +18,10 @@ public:
 	AMyCharacter();
 
 private:
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta=(AllowPrivateAccess = "true"))
 	USpringArmComponent* SpringArm;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta=(AllowPrivateAccess = "true"))
 	UCameraComponent* Camera;
 
 protected:
@@ -42,6 +42,6 @@ public:
 	void MoveRight(float AxisValue);
 
 private:
-	bool bISMovingX = false;
+	bool bIsMovingX = false;
 	bool bIsMovingY = false;
 };

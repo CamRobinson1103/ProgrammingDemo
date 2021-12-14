@@ -30,10 +30,8 @@ public:
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float YawSpeed = 20.0f;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float PitchSpeed = 0.0f;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float RollSpeed = 0.0f;
 };
