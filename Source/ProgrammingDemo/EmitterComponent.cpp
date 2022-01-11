@@ -6,10 +6,10 @@
 // Sets default values for this component's properties
 UEmitterComponent::UEmitterComponent()
 {
-	
+
 	PrimaryComponentTick.bCanEverTick = true;
 
-	 AProjectile::StaticClass();
+	ProjectileClass = AProjectile::StaticClass();
 }
 
 
@@ -43,6 +43,6 @@ void UEmitterComponent::SpawnProjectile()
 	spawnParameters.Owner = owner;
 	spawnParameters.Instigator = owner->GetInstigator();
 
-	AProjectile* projectile = GetWorld()->SpawnActor<AProjectile>(location, rotation);
+	AProjectile* projectile = GetWorld()->SpawnActor<AProjectile>(ProjectileClass, location, rotation);
 }
 
