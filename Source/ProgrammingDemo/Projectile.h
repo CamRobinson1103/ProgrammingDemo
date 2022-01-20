@@ -35,4 +35,5 @@ public:
 
 	
 	void FireInDirection(const FVector& ShootDirection);
+
 };
