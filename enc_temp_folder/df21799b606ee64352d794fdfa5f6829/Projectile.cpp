@@ -21,8 +21,8 @@ AProjectile::AProjectile()
 	Mesh->SetupAttachment(RootComponent);
 
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
-	ProjectileMovement->InitialSpeed = 2000.0f;
-	ProjectileMovement->MaxSpeed = 2000.0f;
+	ProjectileMovement->InitialSpeed = 2000000.0f;
+	ProjectileMovement->MaxSpeed = 2000000.0f;
 	ProjectileMovement->ProjectileGravityScale = 0.0f;
 }
 
